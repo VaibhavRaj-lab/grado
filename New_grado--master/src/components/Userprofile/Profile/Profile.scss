@@ -1,0 +1,61 @@
+
+
+#component_profile {
+
+  $primary-color:hsla(26, 96%, 57%, 1);
+
+  .primary-color-text {
+    color:$primary-color;
+  }
+
+  $secondary-color:hsla(219, 57%, 37%, 1);
+
+  .secondary-color-text {
+    color:$secondary-color;
+  }
+
+  .profile_pic {
+    max-width:217px;
+  }
+
+  .pensil_badge {
+    filter: drop-shadow(0px 0px 50px rgba(0, 0, 0, 0.64));
+  }
+
+  .details_head {
+    max-width: 111px;
+  }
+
+  .btn-primary {
+    background-color: $primary-color;
+    border-color: $primary-color;
+    color: white;
+  }
+
+  .btn-primary:hover {
+    background-color: darken($primary-color, 10%);
+  }
+
+  .btn-primary:active {
+    background-color: darken($primary-color, 30%);
+  }
+
+  .btn-primary-outline {
+    background-color: white;
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+
+  .btn-primary-outline:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .btn-primary-outline:active {
+    background-color: darken($primary-color, 30%);
+    color: white;
+  }
+
+
+
+}

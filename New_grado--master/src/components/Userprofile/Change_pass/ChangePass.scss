@@ -1,0 +1,35 @@
+#component_changepass {
+
+  $primary-color:hsla(26, 96%, 57%, 1);
+
+  .container {}
+
+  h2 {
+    color: hsla(220, 48%, 38%, 1);
+  }
+
+  .changepass_form {
+    max-width: 429px;
+
+    form input[type=text] {
+      background-color: hsla(26, 96%, 57%, 0.14);
+    }
+
+    form input::placeholder {
+      color:hsla(220, 42%, 33%, 0.93);
+    }
+
+    form button {
+      background-color: $primary-color;
+      color:white;
+    }
+
+    p {
+      color:hsla(220, 37%, 44%, 1);
+    }
+
+  }
+
+
+
+}

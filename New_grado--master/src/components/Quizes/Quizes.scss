@@ -1,0 +1,117 @@
+#component_quizes {
+  font-family: Poppins;
+  font-style: normal;
+
+  $primary-color:hsla(0, 0%, 22%, 1);
+
+  #component_footer, #component_navbar {
+    background-color: hsla(219, 54%, 41%, 1);
+  }
+
+  #component_navbar .btn {
+    background-color: hsla(219, 41%, 56%, 1);
+    color: white;
+  }
+
+  #component_navbar .btn:hover {
+    background-color: darken(hsla(219, 41%, 56%, 1), 10%);
+  }
+
+  #component_navbar .btn:active {
+    background-color: darken(hsla(219, 41%, 56%, 1), 30%);
+  }
+
+  .sidebar {
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+
+    @media (min-width: 992px) {
+     width: 300px;
+    }
+
+    .nav-link.active {
+      color:hsla(208, 100%, 14%, 1);
+      font-weight: bold;
+    }
+  }
+
+  .my-btn {
+    border-radius: 13px;
+  }
+
+  .my-btn-primary {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .my-btn-primary:hover {
+    background-color: darken($primary-color, 10%);
+  }
+
+  .my-btn-primary:active {
+    background-color: darken($primary-color, 30%);
+  }
+
+  .my-btn-outline-primary {
+    border-color: $primary-color;
+    color: $primary-color;
+  }
+
+  .my-btn-outline-primary:hover {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .my-btn-outline-primary:active {
+    background-color: darken($primary-color, 30%);
+    color: white;
+  }
+
+  .my-btn-success {
+    background-color: hsla(126, 94%, 70%, 0.49);
+    color: hsla(126, 99%, 33%, 1);
+  }
+
+  .my-btn-success:hover {
+    background-color: darken(hsla(126, 94%, 70%, 0.49), 10%);
+  }
+
+  .my-btn-success:active {
+    background-color: darken(hsla(126, 94%, 70%, 0.49), 30%);
+  }
+
+  .profile_pic {
+    border-radius: 27px;
+    max-width: 206px;
+  }
+
+  .progress {
+    border: 1px solid rgba(0, 0, 0, 0.16);
+  }
+
+  .progress-bar {
+    background: linear-gradient(270deg, #242424 3.12%, #002647 89.6%, rgba(57, 57, 57, 0) 206.04%);
+  }
+
+  .level-progress-bar {
+    width: 60%;
+  }
+
+  .experience-progress-bar {
+    width: 40%;
+  }
+
+  .progress-label {
+    color: hsla(0, 0%, 22%, 1);
+  }
+
+  .quizes_list .card {
+    border: 2px solid rgba(57, 57, 57, 0.7);
+  }
+
+  .quize_img {
+    width: 300px;
+  }
+
+
+}

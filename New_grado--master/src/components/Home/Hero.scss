@@ -1,0 +1,40 @@
+@import 'variables';
+
+#component_hero {
+
+  p {
+    color: #FED098;
+  }
+
+  button {
+    border-radius: 10px;
+    color: white;
+    border: 3px solid $btn-secondary-color;
+  }
+
+  .btn_1 {
+    background: $btn-secondary-color;
+  }
+
+  .btn_1:hover {
+    background: darken($btn-secondary-color, 10%);
+    border-color:darken($btn-secondary-color, 10%);
+  }
+
+  .btn_1:active {
+    background: darken($btn-secondary-color, 30%);
+    border-color:darken($btn-secondary-color, 30%);
+  }
+
+  .btn_2:hover {
+    background: $btn-secondary-color;
+    border-color:$btn-secondary-color;
+  }
+
+  .btn_2:active {
+    background: darken($btn-secondary-color, 30%);
+    border-color:darken($btn-secondary-color, 30%);
+  }
+
+
+}

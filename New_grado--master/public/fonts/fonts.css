@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Myanmar-Khyay';
+  src:  url('Myanmar-Khyay.ttf.woff') format('woff'),
+  url('Myanmar-Khyay.ttf.svg#Myanmar-Khyay') format('svg'),
+  url('Myanmar-Khyay.ttf.eot'),
+  url('Myanmar-Khyay.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}

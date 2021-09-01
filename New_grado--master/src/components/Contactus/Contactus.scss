@@ -1,0 +1,79 @@
+#component_contactus {
+
+  $primary-color: hsla(33, 95%, 61%, 1);
+  $secondary-color: #30569F;
+
+  font-family: Poppins;
+  font-style: normal;
+
+  .component-text-primary {
+    color: $primary-color;
+  }
+
+  #component_footer, #component_navbar {
+    background-color: hsla(219, 54%, 41%, 1);
+  }
+
+  #component_navbar .btn {
+    background-color: hsla(219, 41%, 56%, 1);
+    color: white;
+  }
+
+  #component_navbar .btn:hover {
+    background-color: darken(hsla(219, 41%, 56%, 1), 10%);
+  }
+
+  #component_navbar .btn:active {
+    background-color: darken(hsla(219, 41%, 56%, 1), 30%);
+  }
+
+  #main {
+    background-color: #FAF9F9;
+  }
+
+  .hero {
+
+    .card {
+
+      border-radius: 20px;
+
+      .hero-text {
+        max-width: 450px;
+      }
+
+    }
+
+    .btn {
+      background-color: $primary-color;
+      color: white;
+    }
+  }
+
+  .contact-form {
+    input[type=text], textarea {
+      border: 2px solid #30569F;
+      border-radius: 9px;
+    }
+
+    input[type=checkbox] {
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 4px;
+    }
+
+    .badge {
+      background-color: $secondary-color;
+      color: white;
+      border-radius: 14px;
+
+    }
+
+    input[type=text].captcha-input {
+      border:none;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border-radius: 20px;
+      width: 218px;
+    }
+
+  }
+
+}

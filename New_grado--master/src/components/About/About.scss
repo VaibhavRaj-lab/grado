@@ -1,0 +1,145 @@
+#component_about {
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+  $primary-color: hsla(220, 56%, 37%, 1);
+  font-family: Poppins;
+  font-style: normal;
+
+
+  #component_footer, #component_navbar {
+    background-color:hsla(219, 54%, 41%, 1);
+  }
+
+  #component_navbar .btn {
+    background-color: hsla(219, 41%, 56%, 1);
+    color: white;
+  }
+
+  #component_navbar .btn:hover {
+    background-color: darken(hsla(219, 41%, 56%, 1), 10%);
+  }
+
+  #component_navbar .btn:active {
+    background-color: darken(hsla(219, 41%, 56%, 1), 30%);
+  }
+
+
+  .primary-color-text {
+    color: $primary-color;
+  }
+
+  .secondary-color-text {
+    color: hsla(26, 96%, 57%, 1);
+  }
+
+  .hero-container .hero-text {
+    position: relative;
+    z-index: 10;
+
+    @media (min-width: 992px) {
+      font-size: 35px;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 30px;
+      font-size: 42px;
+    }
+
+  }
+
+  .hero-container img {
+    position: relative;
+    z-index: 5;
+    margin-top: -50px;
+
+    @media (min-width: 768px) {
+      margin-top: -100px;
+    }
+
+    @media (min-width: 992px) {
+      margin-top: -150px;
+    }
+
+  }
+
+  .hero-text {
+
+  }
+
+  .cover-1 {
+
+  }
+
+  .culture_our {
+    color: #002647;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 42px;
+    line-height: 63px;
+  }
+
+  .culture-text {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: center;
+    color: #616162;
+    max-width: 86%;
+  }
+
+  .card_culture {
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    background-color: hsla(206, 62%, 95%, 0.49);
+    width: 90%;
+
+    h3 {
+      font-weight: 600;
+    }
+  }
+
+
+  .list-group-item {
+    color: hsla(208, 100%, 14%, 1);
+  }
+
+  .join_team {
+    background-color: hsla(206, 62%, 95%, 0.49);
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+
+    h1 {
+      font-family: Poppins;
+
+      @media (min-width: 768px) {
+        font-size: 50px;
+        font-weight: 500;
+
+      }
+    }
+
+    p {
+      color: hsla(225, 0%, 38%, 1);
+    }
+
+    .btn {
+      border-radius: 12px;
+      background-color: $primary-color;
+      color: white;
+    }
+
+    .btn:hover {
+      background-color: darken($primary-color, 10%);
+    }
+
+    .btn:active {
+      background-color: darken($primary-color, 30%);
+    }
+  }
+
+}

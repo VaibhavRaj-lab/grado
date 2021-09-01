@@ -1,0 +1,86 @@
+#component_blogs {
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+  $primary-color: hsla(220, 56%, 37%, 1);
+  font-family: Poppins;
+  font-style: normal;
+
+
+  #component_navbar {
+    background-color:hsla(219, 54%, 41%, 1);
+  }
+
+  #component_navbar .btn {
+    background-color: hsla(219, 41%, 56%, 1);
+    color: white;
+  }
+
+  #component_navbar .btn:hover {
+    background-color: darken(hsla(219, 41%, 56%, 1), 10%);
+  }
+
+  #component_navbar .btn:active {
+    background-color: darken(hsla(219, 41%, 56%, 1), 30%);
+  }
+
+  .btn-pink {
+    background-color: hsla(320, 100%, 58%, 1);
+  }
+
+  .btn-pink:hover {
+    background-color: darken(hsla(320, 100%, 58%, 1), 10%);
+  }
+
+  .btn-pink:active {
+    background-color: darken(hsla(320, 100%, 58%, 1), 30%);
+  }
+
+  .btn-yellow {
+    background-color: hsla(40, 100%, 50%, 1);
+  }
+
+  .btn-yellow:hover {
+    background-color: darken(hsla(40, 100%, 50%, 1), 10%);
+  }
+
+  .btn-yellow:active {
+    background-color: darken(hsla(40, 100%, 50%, 1), 30%);
+  }
+
+  .btn-red {
+    background-color: hsla(0, 100%, 50%, 1);
+  }
+
+  .btn-red:hover {
+    background-color: darken(hsla(0, 100%, 50%, 1), 10%);
+  }
+
+  .btn-red:active {
+    background-color: darken(hsla(0, 100%, 50%, 1), 30%);
+  }
+
+  .main_post_card {
+
+    img {
+      border-radius: 30px;
+    }
+
+    .post_tag {
+      color: hsla(320, 100%, 52%, 1);
+    }
+
+  }
+
+  .recent_post_card {
+
+    img {
+      border-radius: 8px;
+    }
+
+    .post_tag {
+      color: hsla(320, 100%, 52%, 1);
+    }
+
+  }
+
+}

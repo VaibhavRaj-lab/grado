@@ -1,0 +1,90 @@
+#component_course_result {
+
+  $primary-color:hsla(219, 54%, 41%, 1);
+  $primary-light-color:hsla(219, 54%, 41%, 0.05);
+
+  font-family: Poppins;
+  font-style: normal;
+
+  .result-text {
+    color:hsla(0, 0%, 24%, 1);
+    .result_query {
+      color: $primary-color;
+    }
+  }
+
+  .star {
+    color: $primary-color;
+  }
+
+
+  .result_sidebar {
+    max-width: 441px;
+
+    .card {
+      background-color: $primary-light-color;
+      border:0;
+
+      input[type=checkbox] {
+        //background: #FFFFFF;
+        border: 3px solid #4B6CAB;
+        box-sizing: border-box;
+        padding: 9px;
+      }
+
+      input[type=text] {
+        box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.13);
+        color:$primary-color;
+        border-radius: 6px;
+      }
+
+      input[type=text]::placeholder {
+        color:$primary-color;
+      }
+
+    }
+  }
+
+  .rating_div {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+
+    .rating_label {
+      color:#424242;
+    }
+
+    .btn {
+      background-color: white;
+      color:black;
+      border:0;
+    }
+
+    .rating_dropdown_icon:before {
+      font-weight: 600 !important;
+      color: #30569F;
+    }
+  }
+
+  .result_card {
+
+    .college_name {
+      color:#333333;
+    }
+
+    .detail_name {
+      max-width: 90px;
+      color:#5C5C5C;
+    }
+
+    .price {
+      background-color: hsla(219, 100%, 50%, 0.17);
+      color:$primary-color;
+
+      .denomination {
+        background-color: hsla(26, 100%, 52%, 1);
+        color: white;
+      }
+    }
+
+  }
+
+}

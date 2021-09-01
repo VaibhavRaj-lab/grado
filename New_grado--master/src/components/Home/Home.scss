@@ -1,0 +1,31 @@
+#page_home {
+
+  background-image: url("./img/bg.svg");
+  background-repeat: no-repeat;
+  background-size: 1249px 1049px;
+  background-position-y: -70px;
+
+  //for mobile large
+  @media (min-width: 425px) {
+    background-position-y: -10px;
+  }
+  //for mobile large
+  @media (min-width: 662px) {
+    background-position-y: 50px;
+  }
+
+  // for tablet
+  @media (min-width: 768px) {
+    background-position-y: -50px;
+  }
+
+  // for laptop
+  @media (min-width: 992px) {
+    background-position-y: -200px;
+  }
+
+  // for laptop large
+  @media (min-width: 1200px) {
+    background-position-y: -100px;
+  }
+}
