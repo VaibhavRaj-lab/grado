@@ -1,0 +1,45 @@
+$primary-color:hsla(25, 97%, 51%, 0.87);
+
+
+#component_sidebar {
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+
+  background: rgba(250, 165, 59, 0.05);
+
+  @media (min-width: 992px) {
+    width: 289px;
+  }
+
+  .navbar-nav {
+  }
+
+  .nav-item {
+    @media (min-width: 992px) {
+      margin-left: -50px;
+    }
+
+    .nav-link {
+      padding-left: 100px;
+      @media (min-width: 992px) {
+        padding-left: 100px;
+      }
+    }
+
+    .nav-link.active {
+      background-color: $primary-color;
+      color: white;
+      border-radius: 61px;
+
+    }
+
+    .sidebar-icon {
+      width: 48px;
+    }
+
+  }
+
+
+}

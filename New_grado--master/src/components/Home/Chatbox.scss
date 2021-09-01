@@ -1,0 +1,46 @@
+@import "variables";
+
+#component_chatbox {
+
+  h2 {
+    color: $text-primary-color;
+    font-size: 38px;
+    font-weight: 600;
+  }
+
+  .btn1 {
+    background-color: $chatbox-primary-color;
+    color: white;
+    border-radius: 13px;
+  }
+
+  .btn1:hover {
+    background-color: darken($chatbox-primary-color, 10%);
+  }
+
+  .btn1:active {
+    background-color: darken($chatbox-primary-color, 30%);
+  }
+
+  .btn2 {
+    background-color: $chatbox-secondary-color;
+    color: $chatbox-primary-color;
+    border-radius: 13px;
+  }
+
+
+  .btn2:hover {
+    background-color: darken($chatbox-secondary-color, 10%);
+    color:white;
+  }
+
+  .btn2:active {
+    background-color: darken($chatbox-secondary-color, 30%);
+
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+}

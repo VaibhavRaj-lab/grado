@@ -1,0 +1,40 @@
+#navbar {
+
+  $primary-color: hsla(219, 54%, 41%, 1);
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+  nav {
+
+    a {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      color: hsla(0, 0%, 24%, 1);
+    }
+
+    input[type=text] {
+      box-shadow: 0px 1px 14px rgba(0, 0, 0, 0.13);
+      color:$primary-color;
+      border-radius: 6px;
+    }
+
+    input[type=text]::placeholder {
+      color:$primary-color;
+    }
+
+    form button {
+      background-color: $primary-color;
+    }
+
+    form button:hover {
+      background-color: darken($primary-color, 10%);
+    }
+
+    form button:active {
+      background-color: darken($primary-color, 30%);
+    }
+
+  }
+
+}

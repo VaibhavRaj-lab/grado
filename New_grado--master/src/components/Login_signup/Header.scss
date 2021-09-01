@@ -1,0 +1,95 @@
+@import "variables";
+
+.signup_modal {
+
+  .modal-dialog {
+    max-width: 716px;
+  }
+
+  .modal-content {
+    border: 3px solid $btn-primary-color;
+  }
+
+  .modal-text-primary {
+    color:$btn-primary-color;
+  }
+
+  .card {
+    max-width: 444px;
+  }
+
+  .card .otp-form {
+    max-width: 345px;
+
+    input[type=text] {
+      border: 4px solid $btn-primary-color;
+    }
+
+    form button {
+      background-color: $btn-primary-color;
+      color: white;
+    }
+
+    .resend_otp {
+      color:$btn-primary-color;
+    }
+
+    .resend_otp:hover {
+      color:darken($btn-primary-color, 10%);
+    }
+
+    .resend_otp:active {
+      color:darken($btn-primary-color, 30%);
+    }
+  }
+
+}
+
+.component_login_signup {
+
+
+
+  input[type=text] {
+    border:0;
+    border-radius: 0;
+    border-bottom: 1px solid #FAA53B;
+  }
+
+  input[type=text]::placeholder {
+    color: hsla(0, 0%, 77%, 1);
+  }
+
+  button {
+    background-color: $btn-primary-color;
+    border-radius: 30px;
+  }
+
+  button:hover {
+    background-color: darken($btn-primary-color, 10%);
+  }
+
+  button:active {
+    background-color: darken($btn-primary-color, 30%);
+  }
+
+  .other_section {
+    color:hsla(270, 79%, 29%, 0.89);
+  }
+
+  .other_section a {
+    color:$btn-primary-color;
+  }
+
+  .other_section a:hover {
+    color:darken($btn-primary-color, 10%);
+  }
+
+  .forget_section a {
+    color: lighten(black, 10%);
+  }
+
+  .forget_section a:hover {
+    color: black;
+  }
+
+}
