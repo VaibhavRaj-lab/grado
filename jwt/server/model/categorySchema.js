@@ -4,8 +4,12 @@ const Schema = mongoose.Schema;
 
 const CategorySchema = new Schema(
   {
-    category: {
+    Upcategory: {
       type: String,
+      required: true,
+    },
+    start: {
+      type: Date,
       required: true,
     },
   },

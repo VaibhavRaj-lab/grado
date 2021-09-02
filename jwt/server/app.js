@@ -7,6 +7,7 @@ const superAdminRouter = require("./routes/superAdminRoutes");
 const blogRouter = require("./routes/blogRouter");
 const categoryRouter = require("./routes/categoryRouter");
 const { authUser } = require("./controller/authController");
+const courseRouter = require("./routes/courseRoute");
 require("dotenv").config();
 const app = express();
 const option = { useNewUrlParser: true, useUnifiedTopology: true };
@@ -26,5 +27,6 @@ mongoose
   });
 app.use("/blogs", blogRouter);
 app.use("/category", categoryRouter);
+app.use("/course", courseRouter);
 app.use("/superadmin", authUser, superAdminRouter);
 app.use("/user", userRoute);

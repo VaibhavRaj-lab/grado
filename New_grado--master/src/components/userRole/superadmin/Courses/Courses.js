@@ -1,7 +1,7 @@
 import React from "react";
 
 function Courses(props) {
-  return <div>course</div>;
+  return <div>Courses</div>;
 }
 
 export default Courses;

@@ -17,7 +17,7 @@ function Blog(props) {
   useEffect(async () => {
     const blogs = await fetch("http://localhost:3001/blogs/get");
     const blogsData = await blogs.json();
-
+    console.log(state);
     dispatch({
       type: "Add_Blogs",
       item: blogsData,

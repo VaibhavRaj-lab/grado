@@ -16,6 +16,7 @@ import { useHistory } from "react-router-dom";
 
 function AddBlog(props) {
   const history = useHistory();
+  const [selectCategory, setselectCategory] = useState([]);
   const [input, setinput] = useState({
     title: "",
     description: "",
@@ -30,9 +31,13 @@ function AddBlog(props) {
     setinput({ ...input, [name]: value });
   };
   console.log(input);
+
   useEffect(async () => {
-    await fetch("http://localhost:3001/blogs/add");
-  });
+    const category = await fetch("http://localhost:3001/category/get");
+    const categoryData = await category.json();
+    console.log(categoryData);
+    setselectCategory(categoryData);
+  }, []);
   const addBlog = async (e) => {
     console.log(input);
     const { title, description, author, category } = input;
@@ -69,9 +74,9 @@ function AddBlog(props) {
           value={input.category}
           onChange={changeHandler}
         >
-          <MenuItem value="Node">Node</MenuItem>
-          <MenuItem value="React">React</MenuItem>
-          <MenuItem value="Express">Express</MenuItem>
+          {selectCategory.map((cate) => (
+            <MenuItem value={cate.Upcategory}>{cate.Upcategory}</MenuItem>
+          ))}
         </Select>
       </FormControl>
       <FormControl>

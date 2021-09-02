@@ -71,6 +71,10 @@ function SuperSidebar(props) {
   const activeHandler = (e) => {
     e.preventDefault();
     const sidePath = e.target.getAttribute("value");
+    dispatch({
+      type: "Course_Condition",
+      item: false,
+    });
     console.log(sidePath);
     dispatch({
       type: "Add_User",

@@ -23,21 +23,21 @@ function ViewBlogs(props) {
 
   const data = {
     columns: [
-      { field: "id", headerName: "Sr no", width: 100, editable: false },
+      { field: "id", headerName: "Sr No", width: 150, editable: false },
       { field: "title", headerName: "Title", width: 250, editable: false },
       {
         field: "description",
         headerName: "Description",
-        width: 180,
+        width: 250,
         editable: false,
       },
       {
         field: "author",
         headerName: "Author",
-        width: 120,
+        width: 250,
         editable: false,
       },
-      { field: "category", headerName: "Category", width: 150 },
+      { field: "category", headerName: "Category", width: 250 },
     ],
     rows: [...output],
   };
@@ -47,6 +47,7 @@ function ViewBlogs(props) {
     <div style={{ height: 400, width: "100%" }}>
       <DataGrid
         {...data}
+        editMode="row"
         components={{
           Toolbar: GridToolbar,
         }}
@@ -59,7 +60,6 @@ function ViewBlogs(props) {
             },
           ],
         }}
-        E
       />
     </div>
   );

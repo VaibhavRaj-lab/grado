@@ -1,16 +1,23 @@
 const Category = require("../model/categorySchema");
 
 exports.Addcategory = async (req, res) => {
-  const { category } = req.body;
-  const categorydata = new Category({
-    category,
-  });
-  try {
-    await categorydata.save();
+  const { category, start } = req.body;
+  const Upcategory = category.toUpperCase();
+  const categoryExist = await Category.findOne({ Upcategory });
+  if (categoryExist) {
+    res.status(401).json({ message: "Category already exist" });
+  } else {
+    const categorydata = new Category({
+      Upcategory,
+      start,
+    });
+    try {
+      await categorydata.save();
 
-    res.status(201).json({ categorydata });
-  } catch (error) {
-    res.status(401).json({ message: error.message });
+      res.status(201).json({ categorydata });
+    } catch (error) {
+      res.status(401).json({ message: error.message });
+    }
   }
 };
 exports.getcategory = async (req, res) => {
