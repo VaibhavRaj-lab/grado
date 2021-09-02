@@ -9,6 +9,10 @@ exports.addCourse = async (req, res, next) => {
     experience,
     endDate,
     startDate,
+    adRealPrice,
+    adFakePrice,
+    basicRealPrice,
+    basicFakePrice,
   } = req.body;
   const course = new Course({
     name,
@@ -17,6 +21,18 @@ exports.addCourse = async (req, res, next) => {
     education,
     experience,
     endDate,
+    advancePrice: [
+      {
+        adRealPrice,
+        adFakePrice,
+      },
+    ],
+    basicPrice: [
+      {
+        basicRealPrice,
+        basicFakePrice,
+      },
+    ],
     startDate,
   });
   try {
@@ -48,6 +64,7 @@ exports.deleteCourseById = async (req, res) => {
   }
 };
 exports.editCourse = async (req, res) => {
+  console.log(req.body.adRealPrice);
   let user = await Course.findById(req.params.id);
   user.name = req.body.name;
   user.description = req.body.description;
@@ -55,8 +72,20 @@ exports.editCourse = async (req, res) => {
   user.education = req.body.experience;
   user.endDate = req.body.endDate;
   user.startDate = req.body.startDate;
+  user.basicPrice[0].basicRealPrice = req.body.basicRealPrice;
+  user.basicPrice[0].basicFakePrice = req.body.basicFakePrice;
+  user.advancePrice[0].adFakePrice = req.body.adFakePrice;
+  user.advancePrice[0].adRealPrice = req.body.adRealPrice;
 
   return user.save().then((result) => {
     res.json({ result });
   });
+};
+exports.getCourseById = async (req, res) => {
+  try {
+    const course = await Course.findById(req.params.id);
+    res.status(200).json(course);
+  } catch (error) {
+    res.status(404).json({ message: error.message });
+  }
 };

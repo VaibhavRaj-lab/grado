@@ -16,7 +16,7 @@ import UserRole from "./components/userRole/UserRole";
 import ViewBlogs from "./components/userRole/superadmin/Blog/ViewBlogs";
 import { useEffect } from "react";
 import { useStateValue } from "./StateProvider";
-
+import Table from "./components/userRole/Table";
 function App() {
   const [state, dispatch] = useStateValue();
 
@@ -41,6 +41,7 @@ function App() {
       <Route exact path="/newpassword" component={NewPassword} />
       <Route exact path="/contactus" component={Contactus} />
       <Route exact path="/userrole" component={UserRole} />
+      <Route exact path="/table" component={Table} />
       <Route
         exact
         path="/profile"

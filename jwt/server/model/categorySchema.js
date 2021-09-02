@@ -8,10 +8,6 @@ const CategorySchema = new Schema(
       type: String,
       required: true,
     },
-    start: {
-      type: Date,
-      required: true,
-    },
   },
   { timestamps: true }
 );

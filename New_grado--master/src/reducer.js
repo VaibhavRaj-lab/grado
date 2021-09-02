@@ -4,7 +4,8 @@ export const initialState = {
   filterBlogs: [],
   filterTabForBlogs: "",
   category: [],
-  condition: false,
+  condition: "",
+  getIdForEdit: "",
   courses: [],
 };
 
@@ -34,6 +35,16 @@ const reducer = (state, action) => {
       return {
         ...state,
         condition: action.item,
+      };
+    case "getIdForEdit":
+      return {
+        ...state,
+        getIdForEdit: action.item,
+      };
+    case "editCourse_Condition":
+      return {
+        ...state,
+        editCondition: action.item,
       };
     case "Add_Courses":
       return {

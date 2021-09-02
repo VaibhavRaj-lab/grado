@@ -10,7 +10,7 @@ import { useStateValue } from "../../../StateProvider";
 import { CompassCalibrationOutlined } from "@material-ui/icons";
 import ManageSuperAdmin from "./manageSuperadmin/ManageSuperAdmin";
 import Opportunity from "./opportunities/Opportunity";
-
+import Mentor from "./Mentors/Mentor";
 function SuperAdmin(props) {
   const [{ user }, dispatch] = useStateValue();
   console.log(user);
@@ -36,7 +36,7 @@ function SuperAdmin(props) {
               case "Blog":
                 return <Blog></Blog>;
               case "Mentors":
-                return <PersonalMentors></PersonalMentors>;
+                return <Mentor></Mentor>;
               case "Manage SuperAdmin":
                 return <ManageSuperAdmin></ManageSuperAdmin>;
               case "Opportunities":

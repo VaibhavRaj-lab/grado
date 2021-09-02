@@ -75,6 +75,10 @@ function SuperSidebar(props) {
       type: "Course_Condition",
       item: false,
     });
+    dispatch({
+      type: "editCourse_Condition",
+      item: false,
+    });
     console.log(sidePath);
     dispatch({
       type: "Add_User",

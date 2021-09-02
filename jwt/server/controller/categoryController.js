@@ -1,7 +1,7 @@
 const Category = require("../model/categorySchema");
 
 exports.Addcategory = async (req, res) => {
-  const { category, start } = req.body;
+  const { category } = req.body;
   const Upcategory = category.toUpperCase();
   const categoryExist = await Category.findOne({ Upcategory });
   if (categoryExist) {
@@ -9,7 +9,6 @@ exports.Addcategory = async (req, res) => {
   } else {
     const categorydata = new Category({
       Upcategory,
-      start,
     });
     try {
       await categorydata.save();
